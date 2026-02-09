@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Close } from "../icons/Close";
+import { JSX } from "react";
 
 interface FaqItem {
   question: string;
@@ -41,7 +42,7 @@ export const FaqSection = (): JSX.Element => {
 
   const toggleFaq = (index: number) => {
     setOpenIndexes((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
 
@@ -69,9 +70,7 @@ export const FaqSection = (): JSX.Element => {
                 aria-controls={`faq-answer-${index}`}
                 type="button"
               >
-                <h3 className="flex-1 text-lg font-semibold">
-                  {faq.question}
-                </h3>
+                <h3 className="flex-1 text-lg font-semibold">{faq.question}</h3>
                 <Close className="w-6 h-6" />
               </button>
               {openIndexes.includes(index) && (

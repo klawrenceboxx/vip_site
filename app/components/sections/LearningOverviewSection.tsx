@@ -1,4 +1,5 @@
 import { ChevronRight } from "../icons/ChevronRight";
+import { JSX } from "react";
 
 interface SubjectCard {
   tagline: string;
@@ -14,28 +15,28 @@ export const LearningOverviewSection = (): JSX.Element => {
       tagline: "Math",
       title: "Numbers, logic, and practical applications",
       description: "Explore deeper into mathematical thinking",
-      image: "/images/placeholders/subject-math.svg",
+      image: "/images/vip_images/subject_study_1.png",
       imageAlt: "Math subject illustration",
     },
     {
       tagline: "English",
       title: "Writing, reading, and clear communication skills",
       description: "Strengthen your command of language",
-      image: "/images/placeholders/subject-english.svg",
+      image: "/images/vip_images/subject_study_2.png",
       imageAlt: "English subject illustration",
     },
     {
       tagline: "Science",
       title: "Understand the natural world through experimentation",
       description: "Discover scientific principles and methods",
-      image: "/images/placeholders/subject-science.svg",
+      image: "/images/vip_images/subject_study_3.png",
       imageAlt: "Science subject illustration",
     },
     {
       tagline: "French",
       title: "Language fluency and cultural understanding",
       description: "Learn a new language with confidence",
-      image: "/images/placeholders/subject-french.svg",
+      image: "/images/vip_images/subject_study_4.png",
       imageAlt: "French subject illustration",
     },
   ];

@@ -1,6 +1,7 @@
 import { ChevronRight } from "../icons/ChevronRight";
 import { Finance } from "../icons/Finance";
 import { Science } from "../icons/Science";
+import { JSX } from "react";
 
 export const AcademicSubjectsSection = (): JSX.Element => {
   const features = [
@@ -91,7 +92,7 @@ export const AcademicSubjectsSection = (): JSX.Element => {
           <img
             className="flex-1 min-w-[320px] aspect-[0.94] object-cover rounded-[24px]"
             alt="Student using laptop in a modern learning environment"
-            src="/images/placeholders/student-laptop.svg"
+            src="/images/vip_images/beyond_textbooks.png"
           />
         </div>
       </div>

@@ -1,14 +1,15 @@
 import { Explore } from "../icons/Explore";
 import { IconComponentNode } from "../icons/IconComponentNode";
+import { JSX } from "react";
 
 export const LearningFeaturesSection = (): JSX.Element => {
   return (
     <section className="overflow-hidden flex flex-col items-center w-full bg-[#FFFFFF] text-[#0C0403]">
-      <div className="flex flex-wrap items-start w-full">
+      <div className="flex items-start w-full max-w-[1440px] ">
         <img
           className="w-full max-w-[710px] h-[543px] object-cover"
           alt="Vipul, founder of VIP NextGen Tutoring"
-          src="/images/placeholders/tutor-portrait.svg"
+          src="/images/vip_images/vipul.png"
         />
 
         <div className="flex flex-col h-[543px] items-end justify-center gap-8 px-16 flex-1">

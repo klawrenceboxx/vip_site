@@ -6,6 +6,7 @@ import { Instagram } from "../icons/Instagram";
 import { LinkedIn } from "../icons/LinkedIn";
 import { X } from "../icons/X";
 import { Youtube } from "../icons/Youtube";
+import { JSX } from "react";
 
 const servicesLinks = [
   { id: 1, label: "Math tutoring", href: "#math-tutoring" },

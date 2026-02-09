@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 export const HeroSection = (): JSX.Element => {
   return (
     <section
@@ -41,11 +43,10 @@ export const HeroSection = (): JSX.Element => {
           </div>
         </div>
       </div>
-
       <img
-        className="w-full aspect-[1.78] object-cover"
+        className=""
         alt="Students learning together with modern technology and traditional methods"
-        src="/images/placeholders/hero-classroom.svg"
+        src="/images/vip_images/study_image.png"
       />
     </section>
   );

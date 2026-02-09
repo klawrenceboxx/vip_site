@@ -1,4 +1,5 @@
 import { ChevronRight } from "../icons/ChevronRight";
+import { JSX } from "react";
 
 export const TutorIntroductionSection = (): JSX.Element => {
   return (
@@ -44,7 +45,7 @@ export const TutorIntroductionSection = (): JSX.Element => {
           <img
             className="w-full max-w-[403px] h-[430px] object-cover rounded-[24px]"
             alt="Udemy course preview showing structured learning content for investing fundamentals"
-            src="/images/placeholders/udemy-course.svg"
+            src="/images//vip_images/udemy_logo.png"
           />
         </div>
       </div>

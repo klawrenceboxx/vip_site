@@ -1,4 +1,5 @@
 import { ChevronRight } from "../icons/ChevronRight";
+import { JSX } from "react";
 
 interface Testimonial {
   id: number;

@@ -7,6 +7,7 @@ import { LearningFeaturesSection } from "./sections/LearningFeaturesSection";
 import { LearningOverviewSection } from "./sections/LearningOverviewSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 import { TutorIntroductionSection } from "./sections/TutorIntroductionSection";
+import { JSX } from "react";
 
 const navigationLinks = [
   { label: "About", href: "#about" },
@@ -18,11 +19,21 @@ export const HomeDesktop = (): JSX.Element => {
   return (
     <div className="flex flex-col items-start bg-[#0C0403] text-white">
       <div className="flex flex-col items-center self-stretch w-full bg-[#4C3F00]">
-        <header className="flex h-[72px] items-center justify-around px-16 w-full">
+        <header className="flex h-[72px] items-center justify-around px-16 w-full max-w-[1440px]">
           <div className="flex items-center justify-between flex-1">
             <div className="inline-flex items-center gap-6">
               <div className="relative w-[84px] h-9">
+                <img
+                  className=""
+                  alt="VIP NextGen Tutoring emblem"
+                  src="/images/vip_images/vip_logo.png"
+                />
                 <div className="relative w-[83.33%] h-full left-[7.94%]">
+                  {/* <img
+                    className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[72.59%]"
+                    alt="VIP NextGen Tutoring emblem"
+                    src="/images/vip_images/vip_logo.png"
+                  />
                   <img
                     className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[72.59%]"
                     alt="VIP NextGen Tutoring emblem"
@@ -47,7 +58,7 @@ export const HomeDesktop = (): JSX.Element => {
                     className="absolute w-[21.61%] h-[25.81%] top-0 left-0"
                     alt=""
                     src="/images/logo/vector-4.svg"
-                  />
+                  /> */}
                 </div>
               </div>
               <nav className="inline-flex items-center gap-8">

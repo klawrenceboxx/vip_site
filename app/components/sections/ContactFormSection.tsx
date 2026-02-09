@@ -1,4 +1,5 @@
 "use client";
+import { JSX } from "react";
 
 import { FormEvent, useState } from "react";
 
@@ -25,8 +26,8 @@ export const ContactFormSection = (): JSX.Element => {
             </h2>
 
             <p className="text-xl leading-8 text-center">
-              Have questions about sessions or want to discuss your student&#39;s
-              needs?
+              Have questions about sessions or want to discuss your
+              student&#39;s needs?
             </p>
           </header>
 
@@ -53,9 +54,7 @@ export const ContactFormSection = (): JSX.Element => {
                 type="submit"
                 className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#FFD400] rounded-md shadow-[0px_1px_2px_rgba(12,4,3,0.1),inset_0px_-2px_1px_rgba(0,0,0,0.2)]"
               >
-                <span className="text-sm font-medium text-[#0C0403]">
-                  Send
-                </span>
+                <span className="text-sm font-medium text-[#0C0403]">Send</span>
               </button>
             </div>
 
