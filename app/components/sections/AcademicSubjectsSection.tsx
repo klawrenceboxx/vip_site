@@ -51,15 +51,17 @@ export const AcademicSubjectsSection = (): JSX.Element => {
                   return (
                     <article
                       key={feature.title}
-                      className="flex flex-col items-start gap-4 flex-1 min-w-[220px]"
+                      className="flex flex-row items-start gap-4 flex-1 min-w-[220px] sm:flex-col"
                     >
                       <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
-                      <h3 className="text-xl leading-7 sm:text-2xl sm:leading-8 lg:text-[26px] lg:leading-[31px]">
-                        {feature.title}
-                      </h3>
-                      <p className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
-                        {feature.description}
-                      </p>
+                      <div className="flex flex-col items-start gap-2">
+                        <h3 className="text-xl leading-7 sm:text-2xl sm:leading-8 lg:text-[26px] lg:leading-[31px]">
+                          {feature.title}
+                        </h3>
+                        <p className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
+                          {feature.description}
+                        </p>
+                      </div>
                     </article>
                   );
                 })}
@@ -72,7 +74,7 @@ export const AcademicSubjectsSection = (): JSX.Element => {
             >
               <a
                 href="#results"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Learn more
               </a>

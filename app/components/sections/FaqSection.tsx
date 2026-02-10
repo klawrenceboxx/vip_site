@@ -74,10 +74,10 @@ export const FaqSection = (): JSX.Element => {
           {faqData.map((faq, index) => (
             <article
               key={faq.question}
-              className="flex flex-col items-start w-full bg-[#0C0403] rounded-[16px] border-2 border-white/20"
+              className="group flex flex-col items-start w-full bg-[#0C0403] rounded-[16px] border-2 border-white/20 transition-colors hover:border-white hover:bg-white/5"
             >
               <button
-                className="flex items-center gap-4 sm:gap-6 px-4 sm:px-6 py-4 sm:py-5 w-full text-left"
+                className="flex items-center gap-4 sm:gap-6 px-4 sm:px-6 py-4 sm:py-5 w-full text-left transition-colors group-hover:text-white"
                 onClick={() => toggleFaq(index)}
                 aria-expanded={openIndexes.includes(index)}
                 aria-controls={`faq-answer-${index}`}
@@ -140,7 +140,7 @@ export const FaqSection = (): JSX.Element => {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Notify me
               </button>

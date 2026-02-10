@@ -52,13 +52,13 @@ export const HomeDesktop = (): JSX.Element => {
             <div className="hidden md:flex items-center gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center px-5 py-2 rounded-md border-2 border-white text-white text-sm font-medium hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-md border-2 border-white text-white text-sm font-medium transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Contact
               </a>
               <a
                 href="#schedule"
-                className="inline-flex items-center justify-center px-5 py-2 rounded-md border-2 border-white text-white text-sm font-medium hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-md border-2 border-white text-white text-sm font-medium transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Book
               </a>
@@ -68,7 +68,7 @@ export const HomeDesktop = (): JSX.Element => {
             <button
               type="button"
               onClick={() => setIsMenuOpen(true)}
-              className="md:hidden inline-flex items-center justify-center rounded-md border border-white/40 px-3 py-2 text-sm text-white/80 hover:text-white transition"
+              className="md:hidden inline-flex items-center justify-center rounded-md border border-white/40 px-3 py-2 text-sm text-white/80 transition-colors hover:bg-white hover:text-[#0C0403] hover:border-white"
               aria-label="Open menu"
             >
               ☰
@@ -124,14 +124,14 @@ export const HomeDesktop = (): JSX.Element => {
           <div className="flex flex-col gap-3 border-t border-white/10 pt-4">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-md border border-white/40 text-sm hover:bg-white/10 transition"
+              className="inline-flex items-center justify-center px-5 py-2 rounded-md border border-white/40 text-sm transition-colors hover:bg-white hover:text-[#0C0403] hover:border-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </a>
             <a
               href="#schedule"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-md border border-white/40 text-sm hover:bg-white/10 transition"
+              className="inline-flex items-center justify-center px-5 py-2 rounded-md border border-white/40 text-sm transition-colors hover:bg-white hover:text-[#0C0403] hover:border-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Book

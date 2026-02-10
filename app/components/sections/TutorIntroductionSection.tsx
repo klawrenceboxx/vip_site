@@ -30,7 +30,7 @@ export const TutorIntroductionSection = (): JSX.Element => {
                 href="https://www.udemy.com/course/ixnvestnow/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Learn more
               </a>
@@ -46,7 +46,7 @@ export const TutorIntroductionSection = (): JSX.Element => {
           </div>
 
           <img
-            className="w-full max-w-[360px] h-[240px] sm:max-w-[403px] sm:h-[320px] lg:h-[430px] object-cover rounded-[24px]"
+            className="w-full max-w-[320px] aspect-square object-contain rounded-[24px] mx-auto sm:mx-0 sm:max-w-[360px] lg:max-w-[430px]"
             alt="Udemy course preview showing structured learning content for investing fundamentals"
             src="/images//vip_images/udemy_logo.png"
           />
