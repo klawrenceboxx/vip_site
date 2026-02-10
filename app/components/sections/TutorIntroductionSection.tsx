@@ -3,7 +3,10 @@ import { JSX } from "react";
 
 export const TutorIntroductionSection = (): JSX.Element => {
   return (
-    <section className="section-padding flex flex-col items-center gap-20 w-full bg-[#241D1C]">
+    <section
+      id="self-paced"
+      className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]"
+    >
       <div className="flex flex-col max-w-[1280px] items-start gap-20 w-full">
         <div className="flex flex-wrap items-center gap-20 w-full">
           <div className="flex flex-col items-start gap-8 flex-1 min-w-[320px]">
@@ -23,20 +26,20 @@ export const TutorIntroductionSection = (): JSX.Element => {
             </div>
 
             <div className="inline-flex items-center gap-6">
-              <button
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white"
-                type="button"
+              <a
+                href="https://www.udemy.com/course/ixnvestnow/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
               >
-                <span className="text-sm font-medium text-white">
-                  Learn more
-                </span>
-              </button>
+                Learn more
+              </a>
 
               <a
-                href="#explore"
-                className="inline-flex items-center justify-center gap-2 rounded-md"
+                href="#schedule"
+                className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium text-white hover:text-white/80 transition"
               >
-                <span className="text-sm font-medium text-white">Explore</span>
+                Explore
                 <ChevronRight className="w-6 h-6" />
               </a>
             </div>

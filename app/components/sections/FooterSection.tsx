@@ -9,19 +9,19 @@ import { Youtube } from "../icons/Youtube";
 import { JSX } from "react";
 
 const servicesLinks = [
-  { id: 1, label: "Math tutoring", href: "#math-tutoring" },
-  { id: 2, label: "English tutoring", href: "#english-tutoring" },
-  { id: 3, label: "Science tutoring", href: "#science-tutoring" },
-  { id: 4, label: "French tutoring", href: "#french-tutoring" },
-  { id: 5, label: "Future skills", href: "#future-skills" },
+  { id: 1, label: "Math tutoring", href: "#subjects" },
+  { id: 2, label: "English tutoring", href: "#subjects" },
+  { id: 3, label: "Science tutoring", href: "#subjects" },
+  { id: 4, label: "French tutoring", href: "#subjects" },
+  { id: 5, label: "Future skills", href: "#services" },
 ];
 
 const companyLinks = [
-  { id: 1, label: "About us", href: "#about-us" },
-  { id: 2, label: "Our approach", href: "#our-approach" },
-  { id: 3, label: "Student results", href: "#student-results" },
-  { id: 4, label: "Book a session", href: "#book-session" },
-  { id: 5, label: "Contact us", href: "#contact-us" },
+  { id: 1, label: "About us", href: "#about" },
+  { id: 2, label: "Our approach", href: "#tutor" },
+  { id: 3, label: "Student results", href: "#results" },
+  { id: 4, label: "Book a session", href: "#schedule" },
+  { id: 5, label: "Contact us", href: "#contact" },
 ];
 
 const socialLinks = [
@@ -33,9 +33,9 @@ const socialLinks = [
 ];
 
 const legalLinks = [
-  { id: 1, label: "Privacy policy", href: "#privacy-policy" },
-  { id: 2, label: "Terms of service", href: "#terms-of-service" },
-  { id: 3, label: "Cookie settings", href: "#cookie-settings" },
+  { id: 1, label: "Privacy policy", href: "/privacy-policy" },
+  { id: 2, label: "Terms of service", href: "/terms-of-service" },
+  { id: 3, label: "Cookie settings", href: "/cookie-settings" },
 ];
 
 export const FooterSection = (): JSX.Element => {
@@ -47,38 +47,16 @@ export const FooterSection = (): JSX.Element => {
   };
 
   return (
-    <footer className="section-padding flex flex-col items-center gap-20 w-full bg-[#4C3F00]">
+    <footer className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]">
       <div className="flex flex-col max-w-[1280px] items-start gap-20 w-full">
         <div className="flex flex-wrap items-start gap-16 w-full">
           <div className="flex flex-col w-full max-w-[500px] items-start gap-6">
             <div className="relative w-[84px] h-9" aria-label="VIP logo">
-              <div className="relative w-[83.33%] h-full left-[7.94%]">
-                <img
-                  className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[72.59%]"
-                  alt=""
-                  src="/images/logo/vector-5.svg"
-                />
-                <img
-                  className="absolute w-[27.77%] h-[68.55%] top-[31.45%] left-[49.04%]"
-                  alt=""
-                  src="/images/logo/vector-6.svg"
-                />
-                <img
-                  className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[26.51%]"
-                  alt=""
-                  src="/images/logo/vector-7.svg"
-                />
-                <img
-                  className="absolute w-[30.85%] h-[44.96%] top-[28.45%] left-0"
-                  alt=""
-                  src="/images/logo/vector-8.svg"
-                />
-                <img
-                  className="absolute w-[21.61%] h-[25.81%] top-0 left-0"
-                  alt=""
-                  src="/images/logo/vector-9.svg"
-                />
-              </div>
+              <img
+                className="h-full w-auto"
+                alt="VIP NextGen Tutoring emblem"
+                src="/images/vip_images/vip_logo.png"
+              />
             </div>
 
             <p className="text-lg leading-[28.8px]">
@@ -183,7 +161,7 @@ export const FooterSection = (): JSX.Element => {
 
           <div className="flex flex-wrap justify-between items-start w-full gap-4">
             <p className="text-sm">
-              © 2025 VIP NextGen Tutoring. All rights reserved.
+              © 2026 VIP NextGen Tutoring. All rights reserved.
             </p>
             <nav className="inline-flex items-start gap-6" aria-label="Legal">
               {legalLinks.map((link) => (

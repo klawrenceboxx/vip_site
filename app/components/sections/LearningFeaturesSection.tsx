@@ -4,7 +4,10 @@ import { JSX } from "react";
 
 export const LearningFeaturesSection = (): JSX.Element => {
   return (
-    <section className="overflow-hidden flex flex-col items-center w-full bg-[#FFFFFF] text-[#0C0403]">
+    <section
+      id="tutor"
+      className="overflow-hidden flex flex-col items-center w-full bg-[#0C0403] text-white"
+    >
       <div className="flex items-start w-full max-w-[1440px] ">
         <img
           className="w-full max-w-[710px] h-[543px] object-cover"
@@ -15,7 +18,7 @@ export const LearningFeaturesSection = (): JSX.Element => {
         <div className="flex flex-col h-[543px] items-end justify-center gap-8 px-16 flex-1">
           <div className="flex flex-col max-w-[624px] items-start gap-8">
             <div className="flex flex-col items-start gap-4 w-full">
-              <Explore className="w-20 h-20 text-[#0C0403]" />
+              <Explore className="w-20 h-20 text-white" />
               <div className="flex flex-col items-start gap-6">
                 <h2 className="text-[60px] leading-[72px]">Meet Your Tutor</h2>
 
@@ -33,18 +36,18 @@ export const LearningFeaturesSection = (): JSX.Element => {
             </div>
 
             <div className="inline-flex items-center gap-6">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#0C0403]"
+              <a
+                href="#results"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white rounded-md text-sm font-medium text-white hover:bg-white/10 transition"
               >
-                <span className="text-sm font-medium">Explore</span>
-              </button>
+                Explore
+              </a>
 
               <a
-                href="#view"
-                className="inline-flex items-center justify-center gap-2"
+                href="#schedule"
+                className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white hover:text-white/80 transition"
               >
-                <span className="text-sm font-medium">View</span>
+                View
                 <IconComponentNode className="w-6 h-6" />
               </a>
             </div>

@@ -49,11 +49,11 @@ export const TestimonialsSection = (): JSX.Element => {
         </header>
 
         <div className="flex flex-col items-start gap-8 w-full">
-          <div className="flex flex-wrap items-start gap-8 w-full">
+          <div className="flex flex-wrap items-stretch gap-8 w-full">
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.id}
-                className="flex flex-col items-start gap-8 p-8 flex-1 min-w-[240px] bg-[#0C0403] rounded-[16px] border-2 border-white/20"
+                className="flex flex-col items-start gap-8 p-8 flex-1 min-w-[240px] h-full bg-[#0C0403] rounded-[16px] border-2 border-white/20 justify-between"
               >
                 <div className="flex flex-col items-start gap-12 w-full">
                   <div className="flex flex-col items-start gap-6 w-full">
@@ -82,7 +82,7 @@ export const TestimonialsSection = (): JSX.Element => {
 
                 <div className="inline-flex flex-col items-start gap-4">
                   <a
-                    href="#"
+                    href="#contact"
                     className="inline-flex items-center justify-center gap-2 rounded-md"
                     aria-label={`Read case study for ${testimonial.name}`}
                   >
