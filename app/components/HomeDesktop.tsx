@@ -17,56 +17,27 @@ const navigationLinks = [
 
 export const HomeDesktop = (): JSX.Element => {
   return (
-    <div className="flex flex-col items-start bg-[#0C0403] text-white">
-      <div className="flex flex-col items-center self-stretch w-full bg-[#4C3F00]">
+    <div
+      id="top"
+      className="flex flex-col items-start bg-[#0C0403] text-white"
+    >
+      <div className="sticky top-0 z-50 flex flex-col items-center self-stretch w-full bg-[#0C0403]/95 backdrop-blur">
         <header className="flex h-[72px] items-center justify-around px-16 w-full max-w-[1440px]">
           <div className="flex items-center justify-between flex-1">
             <div className="inline-flex items-center gap-6">
-              <div className="relative w-[84px] h-9">
+              <a href="#top" className="relative w-[84px] h-9">
                 <img
-                  className=""
+                  className="h-full w-auto"
                   alt="VIP NextGen Tutoring emblem"
                   src="/images/vip_images/vip_logo.png"
                 />
-                <div className="relative w-[83.33%] h-full left-[7.94%]">
-                  {/* <img
-                    className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[72.59%]"
-                    alt="VIP NextGen Tutoring emblem"
-                    src="/images/vip_images/vip_logo.png"
-                  />
-                  <img
-                    className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[72.59%]"
-                    alt="VIP NextGen Tutoring emblem"
-                    src="/images/logo/vector.svg"
-                  />
-                  <img
-                    className="absolute w-[27.77%] h-[68.55%] top-[31.45%] left-[49.04%]"
-                    alt=""
-                    src="/images/logo/image.svg"
-                  />
-                  <img
-                    className="absolute w-[26.87%] h-[44.29%] top-[30.21%] left-[26.51%]"
-                    alt=""
-                    src="/images/logo/vector-2.svg"
-                  />
-                  <img
-                    className="absolute w-[30.85%] h-[44.96%] top-[28.45%] left-0"
-                    alt=""
-                    src="/images/logo/vector-3.svg"
-                  />
-                  <img
-                    className="absolute w-[21.61%] h-[25.81%] top-0 left-0"
-                    alt=""
-                    src="/images/logo/vector-4.svg"
-                  /> */}
-                </div>
-              </div>
+              </a>
               <nav className="inline-flex items-center gap-8">
                 {navigationLinks.map((link) => (
                   <a
                     key={link.label}
                     href={link.href}
-                    className="text-lg leading-[28.8px] text-white hover:text-[#FFD400]"
+                    className="text-lg leading-[28.8px] text-white/80 hover:text-white transition"
                   >
                     {link.label}
                   </a>
@@ -74,12 +45,18 @@ export const HomeDesktop = (): JSX.Element => {
               </nav>
             </div>
             <div className="inline-flex items-center justify-center gap-4">
-              <button className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-md border-2 border-white">
-                <span className="text-white text-sm font-medium">Contact</span>
-              </button>
-              <button className="inline-flex items-center justify-center gap-2 px-5 py-2 bg-[#FFD400] rounded-md shadow-[0px_1px_2px_rgba(12,4,3,0.1),inset_0px_-2px_1px_rgba(0,0,0,0.2)]">
-                <span className="text-[#0C0403] text-sm font-medium">Book</span>
-              </button>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-md border-2 border-white text-white text-sm font-medium hover:bg-white/10 transition"
+              >
+                Contact
+              </a>
+              <a
+                href="#schedule"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2 bg-[#0C0403] rounded-md border-2 border-white text-white text-sm font-medium hover:bg-white/10 transition"
+              >
+                Book
+              </a>
             </div>
           </div>
         </header>

@@ -42,7 +42,10 @@ export const LearningOverviewSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="section-padding flex flex-col items-center gap-20 w-full bg-[#241D1C]">
+    <section
+      id="subjects"
+      className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]"
+    >
       <div className="flex flex-col max-w-[1280px] items-center gap-20 w-full">
         <header className="flex flex-col max-w-[768px] items-center gap-4 w-full">
           <p className="text-sm font-semibold uppercase tracking-wide">
@@ -62,13 +65,13 @@ export const LearningOverviewSection = (): JSX.Element => {
         </header>
 
         <div className="flex flex-col items-start gap-8 w-full">
-          <div className="flex flex-wrap items-start gap-8 w-full">
+          <div className="flex flex-wrap items-stretch gap-8 w-full">
             {subjects.map((subject) => (
               <article
                 key={subject.tagline}
-                className="flex flex-col items-start flex-1 min-w-[240px] bg-[#241D1C] rounded-[16px] overflow-hidden border-2 border-white/20"
+                className="group flex flex-col items-start flex-1 min-w-[240px] h-full bg-[#0C0403] rounded-[16px] overflow-hidden border-2 border-white/20 transition hover:-translate-y-1 hover:border-white hover:shadow-[0px_18px_45px_rgba(255,255,255,0.08)]"
               >
-                <div className="flex flex-col items-start justify-center gap-6 p-6 w-full">
+                <div className="flex flex-col items-start justify-center gap-6 p-6 w-full flex-1">
                   <div className="flex flex-col items-start gap-2 w-full">
                     <span className="text-sm font-semibold uppercase tracking-wide">
                       {subject.tagline}
@@ -85,7 +88,7 @@ export const LearningOverviewSection = (): JSX.Element => {
 
                   <div className="flex items-center gap-2">
                     <a
-                      href={`#${subject.tagline.toLowerCase()}`}
+                      href="#services"
                       className="inline-flex items-center justify-center gap-2 rounded-md"
                       aria-label={`Explore ${subject.tagline}`}
                     >

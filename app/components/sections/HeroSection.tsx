@@ -22,23 +22,19 @@ export const HeroSection = (): JSX.Element => {
             </div>
 
             <div className="inline-flex flex-wrap items-start gap-4">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#FFD400] rounded-md shadow-[0px_1px_2px_rgba(12,4,3,0.1),inset_0px_-2px_1px_rgba(0,0,0,0.2)]"
+              <a
+                href="#schedule"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#0C0403] rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
               >
-                <span className="text-sm font-medium text-[#0C0403]">
-                  Book now
-                </span>
-              </button>
+                Book now
+              </a>
 
-              <button
-                type="button"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white"
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
               >
-                <span className="text-sm font-medium text-white">
-                  Learn more
-                </span>
-              </button>
+                Learn more
+              </a>
             </div>
           </div>
         </div>
