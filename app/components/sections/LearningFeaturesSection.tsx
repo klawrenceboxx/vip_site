@@ -6,9 +6,9 @@ export const LearningFeaturesSection = (): JSX.Element => {
   return (
     <section
       id="tutor"
-      className="overflow-hidden flex flex-col items-center w-full bg-[#0C0403] text-white"
+      className="overflow-hidden flex flex-col justify-center items-center border-b-2 bg-[#0C0403] text-white mx-auto"
     >
-      <div className="flex items-start w-full max-w-[1440px] ">
+      <div className="flex items-start w-full max-w-[1440px] mx-auto">
         <img
           className="w-full max-w-[710px] h-[543px] object-cover"
           alt="Vipul, founder of VIP NextGen Tutoring"

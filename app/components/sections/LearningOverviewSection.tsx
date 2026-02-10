@@ -69,9 +69,9 @@ export const LearningOverviewSection = (): JSX.Element => {
             {subjects.map((subject) => (
               <article
                 key={subject.tagline}
-                className="group flex flex-col items-start flex-1 min-w-[240px] h-full bg-[#0C0403] rounded-[16px] overflow-hidden border-2 border-white/20 transition hover:-translate-y-1 hover:border-white hover:shadow-[0px_18px_45px_rgba(255,255,255,0.08)]"
+                className="group flex flex-col items-start flex-1 min-w-[240px] h-auto bg-[#0C0403] rounded-[16px] overflow-hidden border-2 border-white/20 transition hover:-translate-y-1 hover:border-white hover:shadow-[0px_18px_45px_rgba(255,255,255,0.08)]"
               >
-                <div className="flex flex-col items-start justify-center gap-6 p-6 w-full flex-1">
+                <div className="flex flex-col items-start justify-center gap-6 p-6 w-full  flex-1">
                   <div className="flex flex-col items-start gap-2 w-full">
                     <span className="text-sm font-semibold uppercase tracking-wide">
                       {subject.tagline}

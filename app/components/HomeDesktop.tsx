@@ -17,17 +17,14 @@ const navigationLinks = [
 
 export const HomeDesktop = (): JSX.Element => {
   return (
-    <div
-      id="top"
-      className="flex flex-col items-start bg-[#0C0403] text-white"
-    >
+    <div id="top" className="flex flex-col items-start bg-[#0C0403] text-white">
       <div className="sticky top-0 z-50 flex flex-col items-center self-stretch w-full bg-[#0C0403]/95 backdrop-blur">
-        <header className="flex h-[72px] items-center justify-around px-16 w-full max-w-[1440px]">
+        <header className="flex h-[112px] items-center justify-around px-8 w-full max-w-[1440px]">
           <div className="flex items-center justify-between flex-1">
             <div className="inline-flex items-center gap-6">
-              <a href="#top" className="relative w-[84px] h-9">
+              <a href="#top" className="relative w-[156px]">
                 <img
-                  className="h-full w-auto"
+                  className="h-auto"
                   alt="VIP NextGen Tutoring emblem"
                   src="/images/vip_images/vip_logo.png"
                 />

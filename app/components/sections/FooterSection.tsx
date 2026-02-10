@@ -50,8 +50,8 @@ export const FooterSection = (): JSX.Element => {
     <footer className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]">
       <div className="flex flex-col max-w-[1280px] items-start gap-20 w-full">
         <div className="flex flex-wrap items-start gap-16 w-full">
-          <div className="flex flex-col w-full max-w-[500px] items-start gap-6">
-            <div className="relative w-[84px] h-9" aria-label="VIP logo">
+          <div className="flex flex-col w-full max-w-[500px] items-start gap-2">
+            <div className="relative  h-32" aria-label="VIP logo">
               <img
                 className="h-full w-auto"
                 alt="VIP NextGen Tutoring emblem"

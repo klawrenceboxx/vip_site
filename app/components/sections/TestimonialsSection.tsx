@@ -53,7 +53,7 @@ export const TestimonialsSection = (): JSX.Element => {
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.id}
-                className="flex flex-col items-start gap-8 p-8 flex-1 min-w-[240px] h-full bg-[#0C0403] rounded-[16px] border-2 border-white/20 justify-between"
+                className="flex flex-col items-start gap-8 p-8 flex-1 min-w-[240px] h-auto bg-[#0C0403] rounded-[16px] border-2 border-white/20 justify-between"
               >
                 <div className="flex flex-col items-start gap-12 w-full">
                   <div className="flex flex-col items-start gap-6 w-full">
