@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import { Facebook } from "../icons/Facebook";
 import { Instagram } from "../icons/Instagram";
 import { LinkedIn } from "../icons/LinkedIn";
@@ -39,13 +37,6 @@ const legalLinks = [
 ];
 
 export const FooterSection = (): JSX.Element => {
-  const [email, setEmail] = useState("");
-
-  const handleSubscribe = (event: React.FormEvent) => {
-    event.preventDefault();
-    setEmail("");
-  };
-
   return (
     <footer className="section-padding flex flex-col items-center gap-12 sm:gap-16 lg:gap-20 w-full bg-[#0C0403]">
       <div className="flex flex-col max-w-[1280px] items-center text-center gap-12 sm:gap-16 lg:gap-20 w-full sm:items-start sm:text-left">
@@ -58,42 +49,6 @@ export const FooterSection = (): JSX.Element => {
                 src="/images/vip_images/vip_logo.png"
               />
             </div>
-
-            <p className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
-              Get insights on tutoring and future skills.
-            </p>
-
-            <form
-              onSubmit={handleSubscribe}
-              className="flex flex-col items-center gap-3 w-full sm:items-start"
-            >
-              <div className="flex flex-col items-center gap-4 w-full sm:flex-row sm:items-start">
-                <label htmlFor="newsletter-email" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="newsletter-email"
-                  className="px-3 py-2 w-full flex-1 rounded-md border-2 border-white bg-transparent text-base text-white placeholder:text-white/60 sm:text-lg"
-                  placeholder="Email"
-                  type="email"
-                  value={email}
-                  onChange={(event) => setEmail(event.target.value)}
-                  required
-                />
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white"
-                >
-                  <span className="text-sm font-medium text-white">
-                    Subscribe
-                  </span>
-                </button>
-              </div>
-
-              <p className="text-xs text-white/80">
-                We respect your privacy and only send what matters.
-              </p>
-            </form>
           </div>
 
           <nav className="flex flex-wrap items-center sm:items-start gap-8 sm:gap-10 flex-1">
@@ -130,8 +85,8 @@ export const FooterSection = (): JSX.Element => {
             </div>
 
             <div className="flex flex-col items-center sm:items-start gap-4 min-w-[180px]">
-              <h2 className="text-sm font-semibold">Follow us</h2>
-              <ul className="flex flex-col items-center sm:items-start w-full">
+              <h2 className="text-sm font-bold">Follow us</h2>
+              <ul className="flex flex-wrap items-center justify-center gap-3 w-full sm:flex-col sm:items-start sm:gap-0">
                 {socialLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (

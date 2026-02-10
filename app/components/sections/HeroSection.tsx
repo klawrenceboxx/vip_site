@@ -24,14 +24,14 @@ export const HeroSection = (): JSX.Element => {
             <div className="inline-flex flex-wrap items-start justify-center gap-3 sm:gap-4">
               <a
                 href="#schedule"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#0C0403] rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#0C0403] rounded-md border-2 border-white text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Book now
               </a>
 
               <a
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-md border-2 border-white text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Learn more
               </a>

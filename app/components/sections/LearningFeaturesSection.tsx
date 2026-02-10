@@ -40,7 +40,7 @@ export const LearningFeaturesSection = (): JSX.Element => {
             <div className="inline-flex items-center gap-6">
               <a
                 href="#results"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white rounded-md text-sm font-medium text-white hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white rounded-md text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#0C0403]"
               >
                 Explore
               </a>
