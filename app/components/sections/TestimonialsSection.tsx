@@ -40,12 +40,16 @@ export const TestimonialsSection = (): JSX.Element => {
   return (
     <section
       id="results"
-      className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]"
+      className="section-padding flex flex-col items-center gap-12 sm:gap-16 lg:gap-20 w-full bg-[#0C0403]"
     >
-      <div className="flex flex-col max-w-[1280px] items-start gap-20 w-full">
+      <div className="flex flex-col max-w-[1280px] items-start gap-12 sm:gap-16 lg:gap-20 w-full">
         <header className="max-w-[768px] items-start gap-6 flex flex-col w-full">
-          <h2 className="text-[60px] leading-[72px]">Real results</h2>
-          <p className="text-xl leading-8">Students and parents speak</p>
+          <h2 className="text-3xl leading-[38px] sm:text-4xl sm:leading-[46px] lg:text-[60px] lg:leading-[72px]">
+            Real results
+          </h2>
+          <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-xl">
+            Students and parents speak
+          </p>
         </header>
 
         <div className="flex flex-col items-start gap-8 w-full">
@@ -53,11 +57,11 @@ export const TestimonialsSection = (): JSX.Element => {
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.id}
-                className="flex flex-col items-start gap-8 p-8 flex-1 min-w-[240px] h-auto bg-[#0C0403] rounded-[16px] border-2 border-white/20 justify-between"
+                className="flex flex-col items-start gap-6 sm:gap-8 p-6 sm:p-8 flex-1 min-w-[240px] h-auto bg-[#0C0403] rounded-[16px] border-2 border-white/20 justify-between"
               >
                 <div className="flex flex-col items-start gap-12 w-full">
                   <div className="flex flex-col items-start gap-6 w-full">
-                    <blockquote className="text-xl leading-8">
+                    <blockquote className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-xl">
                       &quot;{testimonial.quote}&quot;
                     </blockquote>
 
@@ -72,7 +76,7 @@ export const TestimonialsSection = (): JSX.Element => {
                         <div className="text-sm font-semibold">
                           {testimonial.name}
                         </div>
-                        <div className="text-lg leading-[28.8px]">
+                        <div className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
                           {testimonial.role}
                         </div>
                       </div>
@@ -86,7 +90,7 @@ export const TestimonialsSection = (): JSX.Element => {
                     className="inline-flex items-center justify-center gap-2 rounded-md"
                     aria-label={`Read case study for ${testimonial.name}`}
                   >
-                    <span className="text-lg leading-[28.8px]">
+                    <span className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
                       Read case study
                     </span>
                     <ChevronRight className="w-6 h-6" />

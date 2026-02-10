@@ -47,11 +47,11 @@ export const FooterSection = (): JSX.Element => {
   };
 
   return (
-    <footer className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]">
-      <div className="flex flex-col max-w-[1280px] items-start gap-20 w-full">
-        <div className="flex flex-wrap items-start gap-16 w-full">
-          <div className="flex flex-col w-full max-w-[500px] items-start gap-2">
-            <div className="relative  h-32" aria-label="VIP logo">
+    <footer className="section-padding flex flex-col items-center gap-12 sm:gap-16 lg:gap-20 w-full bg-[#0C0403]">
+      <div className="flex flex-col max-w-[1280px] items-center text-center gap-12 sm:gap-16 lg:gap-20 w-full sm:items-start sm:text-left">
+        <div className="flex flex-wrap items-center sm:items-start gap-12 sm:gap-16 w-full">
+          <div className="flex flex-col w-full max-w-[500px] items-center gap-2 sm:items-start">
+            <div className="relative h-24 sm:h-28 lg:h-32" aria-label="VIP logo">
               <img
                 className="h-full w-auto"
                 alt="VIP NextGen Tutoring emblem"
@@ -59,21 +59,21 @@ export const FooterSection = (): JSX.Element => {
               />
             </div>
 
-            <p className="text-lg leading-[28.8px]">
+            <p className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
               Get insights on tutoring and future skills.
             </p>
 
             <form
               onSubmit={handleSubscribe}
-              className="flex flex-col items-start gap-3 w-full"
+              className="flex flex-col items-center gap-3 w-full sm:items-start"
             >
-              <div className="flex flex-wrap items-start gap-4 w-full">
+              <div className="flex flex-col items-center gap-4 w-full sm:flex-row sm:items-start">
                 <label htmlFor="newsletter-email" className="sr-only">
                   Email address
                 </label>
                 <input
                   id="newsletter-email"
-                  className="px-3 py-2 flex-1 rounded-md border-2 border-white bg-transparent text-lg text-white placeholder:text-white/60"
+                  className="px-3 py-2 w-full flex-1 rounded-md border-2 border-white bg-transparent text-base text-white placeholder:text-white/60 sm:text-lg"
                   placeholder="Email"
                   type="email"
                   value={email}
@@ -96,15 +96,15 @@ export const FooterSection = (): JSX.Element => {
             </form>
           </div>
 
-          <nav className="flex flex-wrap items-start gap-10 flex-1">
-            <div className="flex flex-col items-start gap-4 min-w-[180px]">
+          <nav className="flex flex-wrap items-center sm:items-start gap-8 sm:gap-10 flex-1">
+            <div className="flex flex-col items-center sm:items-start gap-4 min-w-[180px]">
               <h2 className="text-sm font-semibold">Services</h2>
-              <ul className="flex flex-col items-start w-full">
+              <ul className="flex flex-col items-center sm:items-start w-full">
                 {servicesLinks.map((link) => (
                   <li key={link.id} className="py-2 w-full">
                     <a
                       href={link.href}
-                      className="text-sm leading-[25.6px] hover:underline"
+                      className="text-sm leading-[22px] sm:leading-[25.6px] hover:underline"
                     >
                       {link.label}
                     </a>
@@ -113,14 +113,14 @@ export const FooterSection = (): JSX.Element => {
               </ul>
             </div>
 
-            <div className="flex flex-col items-start gap-4 min-w-[180px]">
+            <div className="flex flex-col items-center sm:items-start gap-4 min-w-[180px]">
               <h2 className="text-sm font-semibold">Company</h2>
-              <ul className="flex flex-col items-start w-full">
+              <ul className="flex flex-col items-center sm:items-start w-full">
                 {companyLinks.map((link) => (
                   <li key={link.id} className="py-2 w-full">
                     <a
                       href={link.href}
-                      className="text-sm leading-[25.6px] hover:underline"
+                      className="text-sm leading-[22px] sm:leading-[25.6px] hover:underline"
                     >
                       {link.label}
                     </a>
@@ -129,9 +129,9 @@ export const FooterSection = (): JSX.Element => {
               </ul>
             </div>
 
-            <div className="flex flex-col items-start gap-4 min-w-[180px]">
+            <div className="flex flex-col items-center sm:items-start gap-4 min-w-[180px]">
               <h2 className="text-sm font-semibold">Follow us</h2>
-              <ul className="flex flex-col items-start w-full">
+              <ul className="flex flex-col items-center sm:items-start w-full">
                 {socialLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
@@ -144,7 +144,7 @@ export const FooterSection = (): JSX.Element => {
                         aria-label={`Visit our ${link.label} page`}
                       >
                         <IconComponent className="w-6 h-6" />
-                        <span className="text-sm leading-[25.6px]">
+                        <span className="text-sm leading-[22px] sm:leading-[25.6px]">
                           {link.label}
                         </span>
                       </a>
@@ -156,14 +156,14 @@ export const FooterSection = (): JSX.Element => {
           </nav>
         </div>
 
-        <div className="flex flex-col items-start gap-8 w-full">
+        <div className="flex flex-col items-center sm:items-start gap-6 sm:gap-8 w-full">
           <img className="w-full h-0.5" alt="" src="/images/divider.svg" />
 
-          <div className="flex flex-wrap justify-between items-start w-full gap-4">
+          <div className="flex flex-col items-center sm:flex-row sm:justify-between sm:items-start w-full gap-4">
             <p className="text-sm">
               © 2026 VIP NextGen Tutoring. All rights reserved.
             </p>
-            <nav className="inline-flex items-start gap-6" aria-label="Legal">
+            <nav className="inline-flex flex-wrap items-start gap-4 sm:gap-6" aria-label="Legal">
               {legalLinks.map((link) => (
                 <a key={link.id} href={link.href} className="text-sm underline">
                   {link.label}

@@ -57,12 +57,14 @@ export const FaqSection = (): JSX.Element => {
   return (
     <section
       id="faq"
-      className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]"
+      className="section-padding flex flex-col items-center gap-12 sm:gap-16 lg:gap-20 w-full bg-[#0C0403]"
     >
-      <div className="flex flex-col max-w-[1280px] items-center gap-20 w-full">
-        <header className="max-w-[768px] items-center gap-6 flex flex-col w-full">
-          <h2 className="text-[60px] leading-[72px] text-center">FAQ</h2>
-          <p className="text-xl leading-8 text-center">
+      <div className="flex flex-col max-w-[1280px] items-center gap-12 sm:gap-16 lg:gap-20 w-full">
+        <header className="max-w-[768px] items-center gap-4 sm:gap-6 flex flex-col w-full">
+          <h2 className="text-3xl leading-[38px] text-center sm:text-4xl sm:leading-[46px] lg:text-[60px] lg:leading-[72px]">
+            FAQ
+          </h2>
+          <p className="text-base leading-7 text-center sm:text-lg sm:leading-8 lg:text-xl">
             Common questions about how VIP NextGen Tutoring works and what to
             expect.
           </p>
@@ -75,13 +77,15 @@ export const FaqSection = (): JSX.Element => {
               className="flex flex-col items-start w-full bg-[#0C0403] rounded-[16px] border-2 border-white/20"
             >
               <button
-                className="flex items-center gap-6 px-6 py-5 w-full text-left"
+                className="flex items-center gap-4 sm:gap-6 px-4 sm:px-6 py-4 sm:py-5 w-full text-left"
                 onClick={() => toggleFaq(index)}
                 aria-expanded={openIndexes.includes(index)}
                 aria-controls={`faq-answer-${index}`}
                 type="button"
               >
-                <h3 className="flex-1 text-lg font-semibold">{faq.question}</h3>
+                <h3 className="flex-1 text-base font-semibold sm:text-lg">
+                  {faq.question}
+                </h3>
                 <ChevronRight
                   className={`w-6 h-6 transition-transform duration-300 ${
                     openIndexes.includes(index) ? "rotate-90" : "rotate-0"
@@ -90,13 +94,15 @@ export const FaqSection = (): JSX.Element => {
               </button>
               <div
                 id={`faq-answer-${index}`}
-                className={`flex items-start gap-4 px-6 w-full overflow-hidden transition-all duration-300 ease-in-out ${
+                className={`flex items-start gap-4 px-4 sm:px-6 w-full overflow-hidden transition-all duration-300 ease-in-out ${
                   openIndexes.includes(index)
                     ? "max-h-80 pb-6 opacity-100"
                     : "max-h-0 pb-0 opacity-0"
                 }`}
               >
-                <p className="flex-1 text-lg leading-[28.8px]">{faq.answer}</p>
+                <p className="flex-1 text-base leading-7 sm:text-lg sm:leading-[28.8px]">
+                  {faq.answer}
+                </p>
               </div>
             </article>
           ))}
@@ -107,10 +113,10 @@ export const FaqSection = (): JSX.Element => {
           className="flex flex-col max-w-[560px] items-center gap-6 w-full"
         >
           <div className="flex flex-col items-center gap-4 w-full">
-            <h3 className="text-[40px] leading-[48px] text-center">
+            <h3 className="text-2xl leading-8 text-center sm:text-3xl sm:leading-[40px] lg:text-[40px] lg:leading-[48px]">
               Stay connected
             </h3>
-            <p className="text-xl leading-8 text-center">
+            <p className="text-base leading-7 text-center sm:text-lg sm:leading-8 lg:text-xl">
               Leave your email and we&#39;ll reach out with next steps.
             </p>
           </div>
@@ -121,10 +127,10 @@ export const FaqSection = (): JSX.Element => {
             <label htmlFor="faq-email" className="sr-only">
               Your email address
             </label>
-            <div className="flex flex-wrap items-start gap-4 w-full">
+            <div className="flex flex-col items-center gap-4 w-full sm:flex-row sm:items-start">
               <input
                 id="faq-email"
-                className="px-3 py-2 flex-1 rounded-md border-2 border-white bg-transparent text-lg text-white placeholder:text-white/60"
+                className="px-3 py-2 w-full flex-1 rounded-md border-2 border-white bg-transparent text-base text-white placeholder:text-white/60 sm:text-lg"
                 placeholder="Email address"
                 type="email"
                 value={email}
