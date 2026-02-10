@@ -44,20 +44,20 @@ export const LearningOverviewSection = (): JSX.Element => {
   return (
     <section
       id="subjects"
-      className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]"
+      className="section-padding flex flex-col items-center gap-12 sm:gap-16 lg:gap-20 w-full bg-[#0C0403]"
     >
-      <div className="flex flex-col max-w-[1280px] items-center gap-20 w-full">
+      <div className="flex flex-col max-w-[1280px] items-center gap-12 sm:gap-16 lg:gap-20 w-full">
         <header className="flex flex-col max-w-[768px] items-center gap-4 w-full">
           <p className="text-sm font-semibold uppercase tracking-wide">
             Subjects
           </p>
 
           <div className="flex flex-col items-center gap-6 w-full">
-            <h2 className="text-[60px] leading-[72px] text-center">
+            <h2 className="text-3xl leading-[38px] text-center sm:text-4xl sm:leading-[46px] lg:text-[60px] lg:leading-[72px]">
               Master core academic subjects
             </h2>
 
-            <p className="text-xl leading-8 text-center">
+            <p className="text-base leading-7 text-center sm:text-lg sm:leading-8 lg:text-xl">
               Build strong foundations in mathematics with real-world problem
               solving
             </p>
@@ -69,7 +69,7 @@ export const LearningOverviewSection = (): JSX.Element => {
             {subjects.map((subject) => (
               <article
                 key={subject.tagline}
-                className="group flex flex-col items-start flex-1 min-w-[240px] h-auto bg-[#0C0403] rounded-[16px] overflow-hidden border-2 border-white/20 transition hover:-translate-y-1 hover:border-white hover:shadow-[0px_18px_45px_rgba(255,255,255,0.08)]"
+                className="group flex flex-col items-start flex-1 min-w-[220px] h-auto bg-[#0C0403] rounded-[16px] overflow-hidden border-2 border-white/20 transition hover:-translate-y-1 hover:border-white hover:shadow-[0px_18px_45px_rgba(255,255,255,0.08)]"
               >
                 <div className="flex flex-col items-start justify-center gap-6 p-6 w-full  flex-1">
                   <div className="flex flex-col items-start gap-2 w-full">
@@ -77,10 +77,10 @@ export const LearningOverviewSection = (): JSX.Element => {
                       {subject.tagline}
                     </span>
                     <div className="flex flex-col items-start gap-2 w-full">
-                      <h3 className="text-[32px] leading-[38px]">
+                      <h3 className="text-2xl leading-8 sm:text-[28px] sm:leading-[34px] lg:text-[32px] lg:leading-[38px]">
                         {subject.title}
                       </h3>
-                      <p className="text-lg leading-[28.8px]">
+                      <p className="text-base leading-7 sm:text-lg sm:leading-[28.8px]">
                         {subject.description}
                       </p>
                     </div>

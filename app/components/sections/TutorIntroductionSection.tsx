@@ -5,18 +5,18 @@ export const TutorIntroductionSection = (): JSX.Element => {
   return (
     <section
       id="self-paced"
-      className="section-padding flex flex-col items-center gap-20 w-full bg-[#0C0403]"
+      className="section-padding flex flex-col items-center gap-12 sm:gap-16 lg:gap-20 w-full bg-[#0C0403]"
     >
-      <div className="flex flex-col max-w-[1280px] items-start gap-20 w-full">
-        <div className="flex flex-wrap items-center gap-20 w-full">
-          <div className="flex flex-col items-start gap-8 flex-1 min-w-[320px]">
+      <div className="flex flex-col max-w-[1280px] items-start gap-12 sm:gap-16 lg:gap-20 w-full">
+        <div className="flex flex-wrap items-center gap-10 sm:gap-16 lg:gap-20 w-full">
+          <div className="flex flex-col items-start gap-6 sm:gap-8 flex-1 min-w-[280px]">
             <div className="flex flex-col items-start gap-8 w-full">
               <div className="flex flex-col items-start gap-6 w-full">
-                <h2 className="text-[60px] leading-[72px] text-white">
+                <h2 className="text-3xl leading-[38px] text-white sm:text-4xl sm:leading-[46px] lg:text-[60px] lg:leading-[72px]">
                   Self-Paced Learning Option
                 </h2>
 
-                <p className="text-xl leading-8 text-white">
+                <p className="text-base leading-7 text-white sm:text-lg sm:leading-8 lg:text-xl">
                   Prefer self-paced learning?
                   <br /> Vipul has also created a structured Udemy course
                   covering foundational investing concepts for students and
@@ -46,7 +46,7 @@ export const TutorIntroductionSection = (): JSX.Element => {
           </div>
 
           <img
-            className="w-full max-w-[403px] h-[430px] object-cover rounded-[24px]"
+            className="w-full max-w-[360px] h-[240px] sm:max-w-[403px] sm:h-[320px] lg:h-[430px] object-cover rounded-[24px]"
             alt="Udemy course preview showing structured learning content for investing fundamentals"
             src="/images//vip_images/udemy_logo.png"
           />
